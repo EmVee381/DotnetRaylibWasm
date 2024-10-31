@@ -15,7 +15,7 @@ jobs:
 
       - name: Install wasm-tools
         run: |
-          dotnet workload install wasm-tools
+          dotnet workload install wasm-tools-net7
 
       - name: Checkout raylib
         uses: actions/checkout@v3
