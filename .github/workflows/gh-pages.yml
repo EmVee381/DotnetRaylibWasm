@@ -45,8 +45,8 @@ jobs:
           cd DotnetRaylibWasmRepo/
           dotnet publish -c Release
 
-      - name: Deploy to github pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: DotnetRaylibWasmRepo/DotnetRaylibWasm/bin/Release/net7.0/browser-wasm/AppBundle
+#      - name: Deploy to github pages
+#        uses: peaceiris/actions-gh-pages@v3
+#        with:
+#          github_token: ${{ secrets.GITHUB_TOKEN }}
+#          publish_dir: DotnetRaylibWasmRepo/DotnetRaylibWasm/bin/Release/net7.0/browser-wasm/AppBundle
