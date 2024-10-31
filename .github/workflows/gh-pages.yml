@@ -20,7 +20,7 @@ jobs:
       - name: Checkout raylib
         uses: actions/checkout@v3
         with:
-          ref: 4.2.0
+          ref: 5.0.0
           repository: raysan5/raylib
           path: RaylibRepo
 
