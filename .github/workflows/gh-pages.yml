@@ -39,7 +39,13 @@ jobs:
             -D PLATFORM=Web
           cmake --build artifacts
           cp artifacts/raylib/libraylib.a $GITHUB_WORKSPACE/DotnetRaylibWasmRepo/DotnetRaylibWasm/raylib.a
-
+      - name: Commit raylib.a
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+          git add $GITHUB_WORKSPACE/DotnetRaylibWasmRepo/DotnetRaylibWasm/raylib.a
+          git commit -m "Add raylib.a from build"
+          git push
 #      - name: Publish dotnet project
 #        run: |
 #          cd DotnetRaylibWasmRepo/
